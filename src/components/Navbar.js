@@ -40,7 +40,7 @@ export default function Navbar() {
       <div className="flex items-center gap-4">
         <Link href="/" className="hover:underline">Home</Link>
         <Link href="/about" className="hover:underline">About</Link>
-        <Link href="/contact" className="hover:underline">Contact Us</Link>
+        <Link href="/contact-us" className="hover:underline">Contact Us</Link>
 
         {!user && (
           <>
