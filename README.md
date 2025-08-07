@@ -75,6 +75,13 @@ Visit the [About page](https://net-cafe-website.vercel.app/about) for more info.
 
 ---
 
+## 🌍 Live Demo
+
+Check out the live version of the website:  
+👉 [https://net-cafe-website.vercel.app](https://net-cafe-website.vercel.app/)
+
+---
+
 ## ⚙️ Installation
 
 ```bash
@@ -91,9 +98,5 @@ npm install
 npm run dev
 
 
----
 
-## 🌍 Live Demo
 
-Check out the live version of the website:  
-👉 [https://net-cafe-website.vercel.app](https://net-cafe-website.vercel.app/)
