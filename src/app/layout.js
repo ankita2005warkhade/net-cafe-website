@@ -1,24 +1,20 @@
-import './globals.css';
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
-import Navbar from '@/components/Navbar';
-import { Toaster } from 'sonner';
-
-const inter = Inter({ subsets: ['latin'] });
+import "./globals.css";
+import Navbar from "@/components/Navbar";
+import { ThemeProvider } from "@/components/theme-provider"; // if you use next-themes wrapper
 
 export const metadata = {
-  title: 'NetCafé File Upload',
-  description: 'Upload your print documents easily.',
+  title: "NetCafé",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+    <html lang="en">
+      <body>
+        <ThemeProvider>
           <Navbar />
-          {children}
-          <Toaster richColors position="top-center" />
+          <main className="pt-16"> {/* matches navbar height so content is below it */}
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>
